@@ -36,6 +36,11 @@ Partial Class CrearFactura
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -130,7 +135,7 @@ Partial Class CrearFactura
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(29, 220)
+        Me.Button1.Location = New System.Drawing.Point(421, 42)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(88, 23)
         Me.Button1.TabIndex = 11
@@ -139,7 +144,7 @@ Partial Class CrearFactura
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(145, 220)
+        Me.Button2.Location = New System.Drawing.Point(549, 42)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 12
@@ -148,18 +153,56 @@ Partial Class CrearFactura
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(243, 220)
+        Me.Button3.Location = New System.Drawing.Point(669, 41)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(107, 23)
         Me.Button3.TabIndex = 13
         Me.Button3.Text = "OBSERVACIONES"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(30, 266)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(933, 151)
+        Me.DataGridView1.TabIndex = 14
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(31, 215)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(102, 13)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Motivo Modificación"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(145, 215)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(205, 21)
+        Me.ComboBox1.TabIndex = 16
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(622, 424)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 17
+        Me.Button4.Text = "Imprimir"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'CrearFactura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(758, 406)
+        Me.ClientSize = New System.Drawing.Size(996, 449)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -176,6 +219,7 @@ Partial Class CrearFactura
         Me.Controls.Add(Me.Label1)
         Me.Name = "CrearFactura"
         Me.Text = "CrearFactura"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -194,4 +238,8 @@ Partial Class CrearFactura
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

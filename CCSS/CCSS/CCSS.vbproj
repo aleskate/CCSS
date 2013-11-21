@@ -84,6 +84,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsmedicos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DetalleFactura.Designer.vb">
+      <DependentUpon>DetalleFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaEncabezado.Designer.vb">
+      <DependentUpon>FacturaEncabezado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaEncabezado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GENERAL\CambioContrasena.Designer.vb">
       <DependentUpon>CambioContrasena.vb</DependentUpon>
     </Compile>
@@ -150,6 +162,12 @@
   <ItemGroup>
     <EmbeddedResource Include="CrearFactura.resx">
       <DependentUpon>CrearFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleFactura.resx">
+      <DependentUpon>DetalleFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaEncabezado.resx">
+      <DependentUpon>FacturaEncabezado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListarFacturas.resx">
       <DependentUpon>ListarFacturas.vb</DependentUpon>
