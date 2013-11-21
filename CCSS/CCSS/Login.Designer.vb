@@ -31,6 +31,7 @@ Partial Class Login
         Me.Conn = New System.Data.SqlClient.SqlConnection()
         Me.DAExistUser = New System.Data.SqlClient.SqlDataAdapter()
         Me.DsExistUser = New CCSS.dsExistUser()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.DsExistUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -98,11 +99,21 @@ Partial Class Login
         Me.DsExistUser.DataSetName = "dsExistUser"
         Me.DsExistUser.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(55, 186)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(364, 293)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txContra)
         Me.Controls.Add(Me.txUser)
@@ -124,5 +135,6 @@ Partial Class Login
     Friend WithEvents DAExistUser As System.Data.SqlClient.SqlDataAdapter
     Friend WithEvents DsExistUser As CCSS.dsExistUser
     Friend WithEvents Conn As System.Data.SqlClient.SqlConnection
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class

@@ -74,6 +74,15 @@
     </Compile>
     <Compile Include="CrearFactura.vb">
       <SubType>Form</SubType>
+    <Compile Include="dsaseguradora.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsaseguradora.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsmedicos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsmedicos.xsd</DependentUpon>
     </Compile>
     <Compile Include="GENERAL\CambioContrasena.Designer.vb">
       <DependentUpon>CambioContrasena.vb</DependentUpon>
@@ -168,6 +177,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="dsaseguradora.xsc">
+      <DependentUpon>dsaseguradora.xsd</DependentUpon>
+    </None>
+    <None Include="dsaseguradora.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsaseguradora.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsaseguradora.xss">
+      <DependentUpon>dsaseguradora.xsd</DependentUpon>
+    </None>
     <None Include="dsExistUser.xsc">
       <DependentUpon>dsExistUser.xsd</DependentUpon>
     </None>
@@ -178,6 +198,17 @@
     </None>
     <None Include="dsExistUser.xss">
       <DependentUpon>dsExistUser.xsd</DependentUpon>
+    </None>
+    <None Include="dsmedicos.xsc">
+      <DependentUpon>dsmedicos.xsd</DependentUpon>
+    </None>
+    <None Include="dsmedicos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsmedicos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsmedicos.xss">
+      <DependentUpon>dsmedicos.xsd</DependentUpon>
     </None>
     <None Include="DSPerfiles.xsc">
       <DependentUpon>DSPerfiles.xsd</DependentUpon>
