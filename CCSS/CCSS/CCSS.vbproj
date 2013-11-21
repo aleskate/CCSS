@@ -91,6 +91,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSPerfiles.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ListarFacturas.Designer.vb">
+      <DependentUpon>ListarFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListarFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
   <ItemGroup>
     <EmbeddedResource Include="CrearFactura.resx">
       <DependentUpon>CrearFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarFacturas.resx">
+      <DependentUpon>ListarFacturas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
