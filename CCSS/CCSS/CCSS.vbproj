@@ -73,6 +73,8 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsaseguradora.xsd</DependentUpon>
+    <Compile Include="CrearFactura.Designer.vb">
+      <DependentUpon>CrearFactura.vb</DependentUpon>
     </Compile>
     <Compile Include="CrearFactura.vb">
       <SubType>Form</SubType>
@@ -117,6 +119,17 @@
     <Compile Include="Form1.vb" />
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="ListarFacturas.Designer.vb">
+      <DependentUpon>ListarFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListarFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InsertarCasoDeEstudio.Designer.vb">
