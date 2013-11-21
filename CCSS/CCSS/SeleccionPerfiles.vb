@@ -2,7 +2,7 @@
 
     Private Sub SeleccionPerfiles_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Dim ds = getPerfiles(Form1.DsExistUser.Tables("usuarios").Rows(0).Item(0))
+        Dim ds = getPerfiles(Login.DsExistUser.Tables("usuarios").Rows(0).Item(0))
         If (ds.Tables("perfiles").Rows.Count = 0) Then
             cbPerfil.Enabled = False
             vacio.Text = "NO CUENTA CON NINGÚN PERFIL ASOCIADO"

@@ -69,6 +69,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrearFactura.Designer.vb">
+      <DependentUpon>CrearFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GENERAL\CambioContrasena.Designer.vb">
       <DependentUpon>CambioContrasena.vb</DependentUpon>
     </Compile>
@@ -85,11 +91,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSPerfiles.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InsertarCasoDeEstudio.Designer.vb">
@@ -127,8 +133,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="CrearFactura.resx">
+      <DependentUpon>CrearFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GENERAL\CambioContrasena.resx">
       <DependentUpon>CambioContrasena.vb</DependentUpon>

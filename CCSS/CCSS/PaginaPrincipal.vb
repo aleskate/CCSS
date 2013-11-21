@@ -5,7 +5,7 @@
     End Sub
 
     Public Function ModificarContra(ByVal contra As String) As String
-        updateContra.Parameters("@user").Value = Form1.DsExistUser.Tables("usuarios").Rows(0).Item(0)
+        updateContra.Parameters("@user").Value = Login.DsExistUser.Tables("usuarios").Rows(0).Item(0)
         updateContra.Parameters("@contra").Value = contra
         Try
             Conn.Open()
