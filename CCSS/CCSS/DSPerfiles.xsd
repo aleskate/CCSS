@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSPerfiles" targetNamespace="http://tempuri.org/DSPerfiles.xsd" xmlns:mstns="http://tempuri.org/DSPerfiles.xsd" xmlns="http://tempuri.org/DSPerfiles.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSPerfiles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSPerfiles" msprop:Generator_DataSetName="DSPerfiles">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="getPerfiles" msprop:Generator_TableClassName="getPerfilesDataTable" msprop:Generator_TableVarName="tablegetPerfiles" msprop:Generator_TablePropName="getPerfiles" msprop:Generator_RowDeletingName="getPerfilesRowDeleting" msprop:Generator_RowChangingName="getPerfilesRowChanging" msprop:Generator_RowEvHandlerName="getPerfilesRowChangeEventHandler" msprop:Generator_RowDeletedName="getPerfilesRowDeleted" msprop:Generator_UserTableName="getPerfiles" msprop:Generator_RowChangedName="getPerfilesRowChanged" msprop:Generator_RowEvArgName="getPerfilesRowChangeEvent" msprop:Generator_RowClassName="getPerfilesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idPerfil" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnidPerfil" msprop:Generator_ColumnPropNameInRow="idPerfil" msprop:Generator_ColumnPropNameInTable="idPerfilColumn" msprop:Generator_UserColumnName="idPerfil" type="xs:int" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:getPerfiles" />
+      <xs:field xpath="mstns:idPerfil" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
